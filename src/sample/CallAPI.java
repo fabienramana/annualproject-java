@@ -25,7 +25,7 @@ public class CallAPI {
         StringBuffer responseContent = new StringBuffer();
         ObservableList<ComponentModel> observable = FXCollections.observableArrayList();
         try{
-            URL url = new URL("http://localhost:3000/api/component-models");
+            URL url = new URL("https://annualproject-back.herokuapp.com/api/component-models");
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
             con.setConnectTimeout(5000);

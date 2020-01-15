@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="700.0" prefWidth="700.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TableView fx:id="componentTable" prefHeight="600.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="data" prefWidth="75.0" text="data" />
+           <TableColumn fx:id="photos" prefWidth="75.0" text="photos" />
+           <TableColumn fx:id="textfields" prefWidth="105.0" text="textfields" />
+           <TableColumn fx:id="type" prefWidth="66.0" text="type" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_msg" mnemonicParsing="false" onAction="#initializeComponents" text="Button" />
+   </children>
+</GridPane>
